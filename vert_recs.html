@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" href="vert_recs.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="handlebars-v1.1.2.js"></script>
+	<script src="vert_recs.js"></script>
+	<title>Vertical Gallery Carousel</title>
+</head>
+
+<body class="wrapper">
+<!-- Demo Wrapper Ribbon -->
+<div class="ribbon-wrapper-green"><div class="ribbon-green">DEMO</div></div>
+<!-- Nav Menu -->
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading">Demos</a>
+    <ul>
+        <li class="pure-menu-selected"><a href="#">Gallery Widget</a></li>
+        <li><a href="#">Demo #2</a></li>
+        <li><a href="#">Demo #3</a></li>
+    </ul>
+</div>
+<!-- Grids Wrapper -->
+<div class="pure-g">
+<!-- left grid -->
+<div class="pure-u-1-4 l-box" id="left_body">
+	<div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading">Links</a>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="pure-menu-heading" style="padding-left:10px;">Other Sites:</li>
+        <li><a href="#">Yahoo!</a></li>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Microsoft</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="pure-u-1-4 l-box" id="main_body">
+	<h3>Vertical Carousel Gallery Widget</h3>
+	<div id="outerBox">
+	<div id="vt_gallery_carousel_header">My Images</div> <!-- Or whatever header title customer wants -->
+		<a href="#" id="gallery-prev"><img class="gallery-controls-grey" src="images/prev.png" alt="" /></a>
+		<div id="gallery-wrap" class="vt_gallery_carousel">
+		    <ul id="gallery" class="vt_gallery_results">
+		        <li class="vt_gallery_result" id="vt_gallery_widget">
+		        	<!-- Hover Description -->
+					<div style="display:none" class="vt_gallery_wrapper_toggle">
+						<span style="display:none" class="vt_gallery_image_description">More Information<br>Additional Description</span>
+					</div>
+		        	<a title="{{title}}" href="{{img_url}}">
+		        		<img class="vt_gallery_image" src="http://placehold.it/175x120/7aa37a" alt="" />
+		        	</a>
+			        <div class="vt_gallery_title">
+			        	<a class="vt_gallery_img_link" title="{{title}}" href="{{img_url}}">Some Caption</a>
+			        </div>
+		        </li>
+		        <li class="vt_gallery_result" id="vt_gallery_widget">
+		        	<!-- Hover Description -->
+					<div style="display:none" class="vt_gallery_wrapper_toggle">
+						<span style="display:none" class="vt_gallery_image_description">More Information<br>Additional Description</span>
+					</div>
+		        	<a title="{{title}}" href="{{img_url}}">
+		        		<img class="vt_gallery_image" src="http://placehold.it/175x120/440000" alt="" />
+		        	</a>
+			        <div class="vt_gallery_title">
+			        	<a class="vt_gallery_img_link" title="{{title}}" href="{{img_url}}">Some Caption</a>
+			        </div>
+		        </li>
+		        <li class="vt_gallery_result" id="vt_gallery_widget">
+		        	<!-- Hover Description -->
+					<div style="display:none" class="vt_gallery_wrapper_toggle">
+						<span style="display:none" class="vt_gallery_image_description">More Information<br>Additional Description</span>
+					</div>
+		        	<a title="{{title}}" href="{{img_url}}">
+		        		<img class="vt_gallery_image" src="http://placehold.it/175x120/0d7074" alt="" />
+		        	</a>
+			        <div class="vt_gallery_title">
+			        	<a class="vt_gallery_img_link" title="{{title}}" href="{{img_url}}">Some Caption</a>
+			        </div>
+		        </li>
+		        <li class="vt_gallery_result" id="vt_gallery_widget">
+		        	<!-- Hover Description -->
+					<div style="display:none" class="vt_gallery_wrapper_toggle">
+						<span style="display:none" class="vt_gallery_image_description">More Information<br>Additional Description</span>
+					</div>
+		        	<a title="{{title}}" href="{{img_url}}">
+		        		<img class="vt_gallery_image" src="http://placehold.it/175x120/00c6bd" alt="" />
+		        	</a>
+			        <div class="vt_gallery_title">
+			        	<a class="vt_gallery_img_link" title="{{title}}" href="{{img_url}}">Some Caption</a>
+			        </div>
+		        </li>
+		        <li class="vt_gallery_result" id="vt_gallery_widget">
+		        	<!-- Hover Description -->
+					<div style="display:none" class="vt_gallery_wrapper_toggle">
+						<span style="display:none" class="vt_gallery_image_description">More Information<br>Additional Description</span>
+					</div>
+		        	<a title="{{title}}" href="{{img_url}}">
+		        		<img class="vt_gallery_image" src="http://placehold.it/175x120/ff6b4f" alt="" />
+		        	</a>
+			        <div class="vt_gallery_title">
+			        	<a class="vt_gallery_img_link" title="{{title}}" href="{{img_url}}">Some Caption</a>
+			        </div>
+		        </li>
+		        <li class="vt_gallery_result" id="vt_gallery_widget">
+		        	<!-- Hover Description -->
+					<div style="display:none" class="vt_gallery_wrapper_toggle">
+						<span style="display:none" class="vt_gallery_image_description">More Information<br>Additional Description</span>
+					</div>
+		        	<a title="{{title}}" href="{{img_url}}">
+		        		<img class="vt_gallery_image" src="http://placehold.it/175x120/800080" alt="" />
+		        	</a>
+			        <div class="vt_gallery_title">
+			        	<a class="vt_gallery_img_link" title="{{title}}" href="{{img_url}}">Some Caption</a>
+			        </div>
+		        </li>
+		    </ul>
+		</div>
+		<a href="#" id="gallery-next"><img class="gallery-controls" src="images/next.png" alt="" /></a>
+	</div>
+</div>
+
+</div><!--end pure-g-r wrapper-->
+
+</body>
+
+</html>
